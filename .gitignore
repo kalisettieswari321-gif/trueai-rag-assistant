@@ -1,0 +1,20 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environments & Secrets
+.env
+venv/
+env/
+ENV/
+
+# IDE config
+.vscode/
+.idea/
+
+# Local model cache / library cache
+.cache/
+.huggingface/
+faiss_index/
