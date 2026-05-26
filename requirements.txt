@@ -9,7 +9,7 @@ google-generativeai==0.5.4
 sentence-transformers==2.7.0
 
 # ── Vector store ────────────────────────────────────────────────
-# faiss-cpu==1.7.4
+ faiss-cpu==1.7.4
 
 # ── Numeric ─────────────────────────────────────────────────────
 numpy==1.26.4
