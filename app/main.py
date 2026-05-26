@@ -30,7 +30,10 @@ FRONTEND_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend")
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("=== RAG Assistant starting up ===")
+   try:
     store.build_index()
+   except Exception as e:
+    print("Index build failed:", e)
     logger.info("=== Index ready. Server is live. ===")
     yield
     logger.info("=== RAG Assistant shutting down ===")
